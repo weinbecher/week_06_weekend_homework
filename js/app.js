@@ -48,17 +48,21 @@ const createMilkshakeListItem = function(form){
  milkshakeListItem.appendChild(toppings);
 
  const straw = document.createElement('h4');
+
  const colour = document.createElement('span');
  colour.textContent = '\xa0' ;
  colour.style.backgroundColor = form.straw.value;
- // console.dir(colour);
+ milkshakeListItem.appendChild(colour);
+
+ // console.dir(straw);
  straw.textContent = `Straw` ;
 
-//display straw
  let displayStraw = document.createElement('span');
  displayStraw.textContent = ` ${straw.textContent} \xa0 ${colour.textContent}`
 
+ // straw.style.backgroundColor = form.straw.value;
  milkshakeListItem.appendChild(displayStraw);
+
 
  return milkshakeListItem;
 
