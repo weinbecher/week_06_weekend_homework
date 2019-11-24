@@ -10,6 +10,7 @@
   </head>
   <body>
     <h1>Let's design your dream milkshake!</h1>
+    <div class="container">
     <form id="form">
       <div id="form-wrapper">
         <div class="form-item">
@@ -45,22 +46,45 @@
         <div class="form-item">
           <label for="straw" class="primary"> straw colour</label>
           <input type="color" value="#ffc5df" id="straw">
-
-          </select>
           <!-- first colour to be pink -->
+          </select>
         </div>
 
-      </div>
-      <input type="submit" value="save"/>
+<!-- milkshake mood -->
+
+        <div class="form-item">
+          <p>Please select your milkshake mood:</p>
+
+          <input type="radio"  name="mood" id="moodChoice1" value="Bored">
+          <label for="moodChoice1">Bored</label>
+
+          <input type="radio"  name="mood" id="moodChoice2" value="Silly">
+          <label for="moodChoice2">Silly</label>
+
+          <input type="radio" name="mood" id="moodChoice3" value="Peaceful">
+          <label for="moodChoice3">Peaceful</label>
+
+          <input type="radio" name="mood" id="moodChoice4" value="Mean">
+          <label for="moodChoice4">Mean</label>
+
+          <input type="radio" name="mood" id="moodChoice5" value="Whatever">
+          <label for="moodChoice5">Whatever</label>
+
+
+        </div>
+
+
+
+      <input class="button" type="submit" value="Save"/>
     </form>
+    <button class="button" id="delete-all" type="click">Delete All</button>
+  </div>
 
-    <button id="delete-all">Delete All</button>
 
-    <h2>Here are your milkshakes!</h2>
+    <div class="display">
+    <h3>Here are your milkshakes!</h3>
     <ul id="milkshake-list">
     </ul>
-
-
-
+    </div>
   </body>
 </html>
