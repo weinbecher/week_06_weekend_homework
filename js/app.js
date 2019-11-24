@@ -43,14 +43,22 @@ const createMilkshakeListItem = function(form){
  milkshakeListItem.appendChild(icecream);
 
  const toppings = document.createElement('h4');
- toppings.textContent = `${form.toppings.value} toppings`;
+ toppings.textContent = `And ${form.toppings.value} toppings`;
  form.toppings.value;
  milkshakeListItem.appendChild(toppings);
 
- const straw =
- document.createElement('p');
- straw.textContent = `🥤straw colour is ${form.straw.value}`;
- milkshakeListItem.appendChild(straw);
+ const straw = document.createElement('h4');
+ const colour = document.createElement('span');
+ colour.textContent = '\xa0' ;
+ colour.style.backgroundColor = form.straw.value;
+ // console.dir(colour);
+ straw.textContent = `Straw` ;
+
+//display straw
+ let displayStraw = document.createElement('span');
+ displayStraw.textContent = ` ${straw.textContent} \xa0 ${colour.textContent}`
+
+ milkshakeListItem.appendChild(displayStraw);
 
  return milkshakeListItem;
 
@@ -61,5 +69,8 @@ const handleDeleteAll = function(event){
   const milkshakeList = document.querySelector('#milkshake-list');
   milkshakeList.innerHTML = '';
   // console.log(event);
+  //console.log(this);
+  //console.dir();
+  //how to use them;
 
 }
