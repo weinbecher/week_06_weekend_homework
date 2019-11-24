@@ -1,10 +1,11 @@
 body {
   font-family: 'Indie Flower', cursive;
   color: #33242b;
+  background-color: #f7f4e9;
 }
 
 h1,h2{
-  color: #e5a4c2;
+  color: #654b3a;
 
 }
 
@@ -40,7 +41,7 @@ button, input[type="submit"] {
 .milkshake-list-item {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1px solid #20437c;
-  border-radius: 10%;
-  background: #ddeaff;
+  border: 7px solid #faeaea;
+  border-radius: 0%;
+  background: #FAEAEA;
 }
