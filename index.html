@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dream Milkshake</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <h1>Let's design your dream milkshake!</h1>
+    <form id="form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Milkshake name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="base" class="primary">Choose your base</label>
+          <select id="base">
+            <option value="" disabled selected></option>
+            <option value="Whole Milk">Whole Milk</option>
+            <option value="Semi Skimmed Milk">Semi Skimmed Milk</option>
+            <option value="Skimmed Milk">Skimmed Milk</option>
+            <option value="Soya Milk">Soya Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Hazelnut Milk">Hazelnut Milk</option>
+          </select>
+        </div>
+
+
+        <div class="form-item">
+          <label for="icecream" class="primary">Icecream flavour</label>
+          <input type="text" id="icecream" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="toppings" class="primary">Toppings</label>
+          <input type="text" id="toppings" required/>
+        </div>
+
+
+        <div class="form-item">
+          <label for="straw" class="primary"> straw colour</label>
+          <input type="color" value="#ffc5df" id="straw">
+
+          </select>
+          <!-- first colour to be pink -->
+        </div>
+
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h2>This is your dream milkshake!</h2>
+    <ul id="milkshake-list">
+    </ul>
+
+
+
+  </body>
+</html>
